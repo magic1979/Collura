@@ -23,10 +23,10 @@ var app = {
     receivedEvent: function(id) {
 		
 		if(PushbotsPlugin.isiOS()){
-			PushbotsPlugin.initializeiOS("563244dd1779594b6c8b4567");
+			PushbotsPlugin.initializeiOS("56090d8e17795901288b4567");
 		}
 		if(PushbotsPlugin.isAndroid()){
-			PushbotsPlugin.initializeAndroid("563244dd1779594b6c8b4567", "553856486263");
+			PushbotsPlugin.initializeAndroid("56090d8e17795901288b4567", "1068247241830");
 		}
 		
 		//PushbotsPlugin.resetBadge();
@@ -719,11 +719,11 @@ function regToken() {
 	$(".spinner").show();
 	$.ajax({
 		   type:"GET",
-		   url:"http://interactivebusinessapp.it/device/set_token/PxgLiaL7dBgTYUzUyHZRNGIUlT5NIabyHrkZC57PHoJGiiAQZA/DW1RUcKbUmsw1K5eygLH0VwSJjoGdrORnQIi2suWPWtQGz4ePQ/"+ localStorage.getItem("Token") +"",
+		   url:"http://interactivebusinessapp.it/device/set_token/PxgLiaL7dBgTYUzUyHZRNGIUlT5NIabyHrkZC57PHoJGiiAQZA/JXF5HSOC6ybA5F4g0jxKiqDxRlxwz5Wi3BnKucnAKzaQff7fzE/"+ localStorage.getItem("Token") +"",
 		   //url:"http://interactivebusinessapp.it/device/set_token/{platform_code}/{company_code}/{device_token}",
 		   //Android PxgLiaL7dBgTYUzUyHZRNGIUlT5NIabyHrkZC57PHoJGiiAQZA
 		   //data: {token:localStorage.getItem("Token")},
-		   //DW1RUcKbUmsw1K5eygLH0VwSJjoGdrORnQIi2suWPWtQGz4ePQ
+		   //JXF5HSOC6ybA5F4g0jxKiqDxRlxwz5Wi3BnKucnAKzaQff7fzE
 		   contentType: "application/json; charset=utf-8",
 		   json: 'callback',
 		   timeout: 7000,
@@ -894,7 +894,7 @@ function aprimail () {
 window.plugin.email.open({
 	to:      "",
 	subject: "Contatto",
-	body:    "La Digital Bisiness Card IBA di 'Elvira Collura' e' disponibile al link http://www.interactivebusinessapp.it/download/colap",
+	body:    "La Digital Bisiness Card IBA di 'Elvira Collura' e' disponibile al link http://www.interactivebusinessapp.it/download/e_collura",
 	isHtml:  true
 });
 
@@ -947,7 +947,7 @@ window.plugin.email.open({
 
 function mandasms () {
 	
-	window.plugins.socialsharing.shareViaSMS("La Digital Bisiness Card IBA di 'CoLAP' e' disponibile al link http://www.interactivebusinessapp.it/download/colap", "", function(msg) {console.log('ok: ' + msg)}, function(msg) {alert('error: ' + msg)})
+	window.plugins.socialsharing.shareViaSMS("La Digital Bisiness Card IBA di 'Elvira Collura' e' disponibile al link http://www.interactivebusinessapp.it/download/e_collura", "", function(msg) {console.log('ok: ' + msg)}, function(msg) {alert('error: ' + msg)})
 }
 
 function mandasms5 () {

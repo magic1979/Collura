@@ -23,10 +23,10 @@ var app = {
     receivedEvent: function(id) {
 		
 		if(PushbotsPlugin.isiOS()){
-			PushbotsPlugin.initializeiOS("56090d8e17795901288b4567");
+			PushbotsPlugin.initializeiOS("564df2e7177959b9018b4567");
 		}
 		if(PushbotsPlugin.isAndroid()){
-			PushbotsPlugin.initializeAndroid("56090d8e17795901288b4567", "1068247241830");
+			PushbotsPlugin.initializeAndroid("564df2e7177959b9018b4567", "1017283002235");
 		}
 		
 		//PushbotsPlugin.resetBadge();
@@ -959,9 +959,9 @@ function mandasms5 () {
 
 function aprimappa () {
 	
-	var addressLongLat = '41.913721, 12.459551';
+	var addressLongLat = '41.911842, 12.526962';
 	
-	window.open("google.navigation:q=41.913842,12.517833&mode=d" , '_system');
+	window.open("google.navigation:q=41.911842,12.526962&mode=d" , '_system');
 	
 	//var refff = window.open("https://www.google.com/maps?q="+addressLongLat, '_system');
 	
